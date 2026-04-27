@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "switchboard": {
+      "command": "npx",
+      "args": ["-y", "@ensemble/switchboard@latest"],
+      "env": {
+        "SWITCHBOARD_REGISTRY_PATH": "./personas",
+        "SWITCHBOARD_AUDIT_PATH": "./.ensemble/audit"
+      }
+    },
+    "linear": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-linear"],
+      "env": {
+        "LINEAR_API_KEY": "<your-linear-api-key>"
+      }
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-notion"],
+      "env": {
+        "NOTION_API_KEY": "<your-notion-integration-token>"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "<your-slack-bot-token>"
+      }
+    }
+  }
+}

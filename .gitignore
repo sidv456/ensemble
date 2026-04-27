@@ -1,0 +1,25 @@
+# Local Ensemble runtime artifacts
+.ensemble/audit/
+.claude/
+*.local.md
+
+# Local MCP config (template only is checked in)
+.mcp.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (if Switchboard MCP server lands here later)
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.local
